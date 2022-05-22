@@ -4,7 +4,7 @@ public class HomeWork3 {
         int[] arr3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         int[] arr6 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         int[] arr7 = {1, 1, 2, 2};
-        System.out.println("Task 1: ");
+        System.out.println("Задача 1: ");
         doTask1(arr1);
         System.out.println("\nTask 2: ");
         doTask2(100);
@@ -20,7 +20,7 @@ public class HomeWork3 {
         System.out.println(doTask7(arr7));
     }
 
-    public static void doTask1(int [] arr) {
+    public static void doTask1(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 0) {
                 arr[i] = 1;
@@ -76,30 +76,29 @@ public class HomeWork3 {
         int max = arr[0];
         int min = arr[0];
 
-        for (int k : arr) {
-            if (k > max) {
-                max = k;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
             }
         }
-        for (int j : arr) {
-            if (j < min) {
-                min = j;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
             }
         }
         System.out.println(max);
         System.out.println(min);
     }
 
-    public static boolean doTask7 ( int[] arr){
+    public static boolean doTask7 (int[] arr){
         int rightSum = 0;
         int leftSum = 0;
-        // Нахожу сумму всех элементов
-        for (int k : arr) {
-            rightSum += k;
+        for (int i = 0; i < arr.length; i++) {
+            rightSum += arr[i];
         }
 
-        for (int j : arr) {
-            leftSum += j;
+        for (int i = 0; i < arr.length; i++) {
+            leftSum += arr[i];
             if (leftSum == rightSum - leftSum) {
                 return true;
             }
@@ -107,6 +106,4 @@ public class HomeWork3 {
         return false;
     }
 }
-
-
-
+// The End
