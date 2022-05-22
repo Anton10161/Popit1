@@ -4,7 +4,7 @@ public class HomeWork3 {
         int[] arr3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         int[] arr6 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         int[] arr7 = {1, 1, 2, 2};
-        System.out.println("Задача 1: ");
+        System.out.println("Task 1: ");
         doTask1(arr1);
         System.out.println("\nTask 2: ");
         doTask2(100);
@@ -107,4 +107,4 @@ public class HomeWork3 {
     }
 }
 // The End.
-//что за комиты. Кто придумал эту ..... с GitHabom...
+// Moronic GitHab...
